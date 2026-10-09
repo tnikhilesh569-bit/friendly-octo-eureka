@@ -9,7 +9,6 @@ import { ClayButton } from '@/components/ui/ClayButton';
 import { Message, TTLOption } from '@/types/chat';
 import { QRCodeSVG } from 'qrcode.react';
 import { LiveKitRoom, VideoConference } from '@livekit/components-react';
-import '@livekit/components-styles';
 import { 
   Phone, Video, Send, QrCode, Shield, Lock, 
   Gamepad2, Reply, X, Flame 
