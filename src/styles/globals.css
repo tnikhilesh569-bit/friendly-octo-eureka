@@ -2,27 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .neumorphic-card {
-    background: #FDF8F5;
-    box-shadow: 8px 8px 16px #d5ccc6, -8px -8px 16px #ffffff;
-    border-radius: 1rem;
-  }
+:root {
+  --bg-rose-base: #f9f1ec;
+  --rose-gold-primary: #e0b8a8;
+  --rose-gold-shadow-dark: #d5b3a3;
+  --rose-gold-shadow-light: #ffffff;
+}
 
-  .neumorphic-card-inset {
-    background: #FDF8F5;
-    box-shadow: inset 4px 4px 8px #d5ccc6, inset -4px -4px 8px #ffffff;
-    border-radius: 0.75rem;
-  }
+body {
+  background-color: #f6ede6;
+  color: #5c4033;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden;
+}
 
-  .neumorphic-button {
-    background: linear-gradient(145deg, #f3e4dd, #cdbfae);
-    box-shadow: 6px 6px 12px #d5ccc6, -6px -6px 12px #ffffff;
-    transition: all 0.2s ease-in-out;
-  }
+/* Custom Neumorphic Soft UI Shadows */
+.neumorphic-card {
+  background: linear-gradient(145deg, #fff2eb, #decabf);
+  box-shadow: 12px 12px 24px #d2bdae, -12px -12px 24px #ffffff;
+  border-radius: 24px;
+}
 
-  .neumorphic-button:active {
-    background: #FDF8F5;
-    box-shadow: inset 4px 4px 8px #d5ccc6, inset -4px -4px 8px #ffffff;
-  }
+.neumorphic-pressed {
+  background: #f6ede6;
+  box-shadow: inset 6px 6px 12px #d2bdae, inset -6px -6px 12px #ffffff;
+}
+
+.neumorphic-button {
+  background: linear-gradient(145deg, #ffefe6, #e6c8bc);
+  box-shadow: 6px 6px 12px #d2bdae, -6px -6px 12px #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.neumorphic-button:active {
+  box-shadow: inset 4px 4px 8px #d2bdae, inset -4px -4px 8px #ffffff;
+}
+
+/* Glassmorphism Effects */
+.glass-panel {
+  background: rgba(255, 245, 240, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
